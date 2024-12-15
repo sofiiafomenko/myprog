@@ -998,6 +998,8 @@ ol > li {
     flex-wrap: wrap;
     text-align: center;
     position: relative;
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 
   .carousel button {
