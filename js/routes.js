@@ -69,7 +69,7 @@ export default[
 ];
 
 const urlBase = "https://wt.kpi.fei.tuke.sk/api";
-const articlesPerPage = 20;
+const articlesPerPage = 3;
 
 function createHtml4opinions(targetElm){
     const opinionsFromStorage=localStorage.myTreesComments;
