@@ -771,16 +771,16 @@ ol > li {
   }
 
   .p {
-  font-size: 1rem;
+    font-size: 1rem;
 
   }
 
   .menu {
     background-color: transparent;
   }
-.ad {
-  padding: 10rem 0rem;
-}
+  .ad {
+    padding: 10rem 0rem;
+  }
 
 
   .lop {
@@ -988,7 +988,7 @@ ol > li {
   }
 
   .carousel {
-    width: 100%;
+    width: 20%;
   }
 
   .carousel button {
