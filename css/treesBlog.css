@@ -1,0 +1,1010 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Domine');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: black;
+  margin: 0 auto;
+
+  box-sizing: border-box;
+
+}
+.rating-group {
+  display: flex;
+  justify-content: center;
+  /* Выравнивание по концу */
+  margin-top: 1rem;
+  /* Добавить отступ сверху */
+  width: 100%;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+section {
+  border: 0.1rem solid #000000;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  margin: 1rem;
+  overflow-wrap: anywhere;
+}
+
+section button {
+
+  margin-left: 0rem;
+  border: 1px solid rgba(149, 149, 149, 0.51);
+}
+
+.rating-group label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Выравнивание по центру по вертикали */
+  gap: 1rem;
+  margin-right: 1rem;
+
+  /* Добавить отступ между радиокнопкой и SVG */
+}
+
+.rating-group input[type="radio"] {
+  margin: 0;
+  /* Убрать отступы у радиокнопки */
+  padding: 0;
+  /* Убрать поля у радиокнопки */
+}
+
+.rating-group legend {
+  font-weight: bold;
+  /* Увеличить жирность шрифта */
+  font-size: 1.2rem;
+  /* Увеличить размер шрифта */
+  text-align: center;
+  /* Выравнивание текста по центру */
+
+  /* Убедиться, что элемент занимает всю ширину */
+  margin-bottom: 1rem;
+  /* Добавить отступ снизу */
+}
+
+button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+
+}
+
+#menuIts a[href="#welcome"] {
+  color: #e1acac; /* Замените на желаемый цвет */
+}
+
+.trends {
+  padding: 1rem 2rem;
+  background-color: white;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  text-align: justify;
+  border: 0.2rem rgba(0, 0, 0, 0.13) dashed;
+}
+.trends p {
+  font-size: 1rem;
+}
+.trends h1 {
+  font-size: 2rem;
+}
+.trends h2 {
+  text-align: center;
+}
+.res-image {
+  width: 100%;
+  height: auto;
+  margin-right: 1rem;
+  object-fit: cover;
+  border-radius: 0.4rem;
+}
+input, textarea {}
+tfoot {
+  font-weight: bold;
+}
+
+/* List styles */
+
+ol {
+  margin: 1em 0;
+  padding-left: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+li {
+  margin: 0.5em 0;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+th,
+td {
+  border: 1px solid #000000;
+  padding: 0.5em;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.trends mark {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+  color: black;
+  background-color: #f1f1f1;
+}
+
+.container {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: center;
+  background-image: url("../fig/bg1.jpg");
+}
+
+.ad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.49);
+  border-radius: 0.4rem;
+  padding: 2rem 1rem;
+}
+
+
+.header-index {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.4rem;
+
+
+}
+
+.lop {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+}
+
+.strip-dashed {
+  border-style: dashed;
+  border-color: rgb(136, 184, 148);
+  border-width: 2px;
+  border-left: none;
+  border-right: none;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  margin-top: 1rem;
+}
+
+
+.header-index h1 {
+  margin-left: 2rem;
+  justify-self: left;
+  box-sizing: border-box;
+  font-family: 'Domine', cursive;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0.5rem;
+
+}
+.hamburger {
+  display: none;
+}
+
+.menuLink {
+
+  padding: 10px;
+}
+
+.menuLink a {
+  display: inline-block;
+  text-decoration: none; /* Убираем подчеркивание */
+  color: inherit; /* Сохраняем цвет текста */
+}
+
+.menuLink svg {
+  fill: rgb(75, 113, 75); /* Цвет стрелки */
+  transition: transform 0.3s ease; /* Плавный переход для эффекта */
+}
+
+.menuLink a:hover svg {
+  transform: translateY(-3px); /* Эффект подъема при наведении */
+}
+
+
+
+.menu a {
+  text-decoration: none;
+  color: #000000;
+  padding: 0.5rem 0.5rem;
+  transition: background-color 0.3s;
+  margin: 0.625rem 1.25rem;
+  font-weight: 600;
+
+}
+
+.menu a:hover {
+  transform: scale(1.1);
+  /* Transformation */
+  transition: transform 0.3s ease;
+  /* Transition */
+  text-decoration: none;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem 3rem 2rem 2rem;
+  border-radius: 0.4rem;
+  margin: 2rem;
+  max-width: 100%;
+}
+
+
+
+input:not([required]),
+textarea:not([required]) {
+  border: 2px solid rgb(136, 184, 148);
+  /* Зеленая рамка для необязательных полей */
+}
+
+input:not([required])::placeholder,
+textarea:not([required])::placeholder {
+  color: rgb(136, 184, 148);
+  /* Зеленый цвет плейсхолдера для необязательных полей */
+}
+
+/* Стили для валидных полей */
+input:valid,
+textarea:valid {
+  border: 2px solid rgb(136, 184, 148);
+  /* Зеленая рамка для валидных полей */
+}
+
+input:valid::placeholder,
+textarea:valid::placeholder {
+  color: rgb(136, 184, 148);
+  /* Зеленый цвет плейсхолдера для валидных полей */
+}
+
+/* Стили для невалидных полей */
+input:invalid,
+textarea:invalid {
+  border: 2px solid #880000;
+  /* Красная рамка для невалидных полей */
+}
+
+input:invalid::placeholder,
+textarea:invalid::placeholder {
+  color: #880000;
+  /* Красный цвет плейсхолдера для невалидных полей */
+}
+
+main > article {
+  padding: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0.4rem;
+  margin: 2rem;
+}
+
+article h3 {
+  font-size: 1.5rem;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+}
+
+article img {
+  border-radius: 0.4rem;
+}
+.carousel {
+
+  justify-self: center;
+  width: 75%;
+  height: 75%;
+  overflow: hidden;
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  box-sizing: border-box;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+
+
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem;
+}
+
+
+
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+form > h3 {
+  font-size: 1.5rem;
+}
+
+
+
+.typing {
+  color: rgb(75, 113, 75);
+  margin-left: 2rem;
+  text-align: left;
+  font-family: 'Domine', cursive;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #efcfcf; /* Эффект курсора */
+  animation: blink 0.7s steps(1) infinite;
+  margin-bottom: 5rem;
+}
+
+
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.9375rem;
+  border: 1px solid rgba(149, 149, 149, 0.51);
+  border-radius: 0.4rem;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  padding: 1rem;
+  margin-right: 0.625rem;
+  border: 1px solid rgba(149, 149, 149, 0.51);
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.info {
+  text-align: center;
+  font-size: 0.875rem;
+  color: black;
+}
+
+.info > a {
+  font-size: 1.125rem;
+}
+
+.info a:hover {
+  transform: scale(1.3);
+  /* Transformation */
+  transition: transform 0.3s ease;
+  /* Transition */
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.125rem;
+}
+
+header {
+  padding: 0;
+}
+
+.for-ul {
+  display: flex;
+  justify-content: center;
+}
+
+.size {
+  font-size: 1.5625rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.6;
+
+  text-overflow: ellipsis;
+}
+
+footer {
+  color: black;
+  text-align: center;
+  padding: 1.25rem;
+}
+
+footer svg {
+  align-self: center;
+  width: 70px;
+  height: 70px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 0.0625rem solid #ccc;
+}
+
+th,
+td {
+  padding: 1.25rem 3.75rem;
+  text-align: center;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.img-container img {
+  transition: transform 0.3s;
+}
+
+.img-container img:hover {
+  transform: scale(1.1);
+}
+
+.img-box {
+  max-width: 100%;
+  height: auto;
+  margin: 0.625rem;
+}
+
+.img-box img {
+  max-width: 80%;
+  height: auto;
+  margin: 3rem;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.wrap {
+  margin: 1.25rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.opns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.opns h2 {
+  font-size: 1.5rem;
+}
+
+
+.arrow-top-5 {
+  margin: 20px 8px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  fill: rgb(75, 113, 75);
+  transition: fill 0.5s ease-out, transform 0.3s ease-in;
+}
+
+.arrow-top-5 {
+  transform: rotate(180deg);
+}
+
+.arrow-top-5:hover {
+  fill: rgb(51, 78, 51);
+  transform: scale(1.2);
+}
+
+.arrow-top-5:hover {
+  transform: rotate(180deg) scale(1.2);
+}
+
+.col {
+
+  margin: 0 0.625rem 1.25rem 0.625rem;
+  flex: 1 1 18.75rem;
+  border: 0.5rem solid #ccc;
+  border-radius: 0.4rem;
+  padding: 1.25rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+}
+
+.col:hover {
+  transform: translateY(-0.3125rem);
+  box-shadow: 0 0.375rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+a:hover {
+  transform: scale(1.1);
+  /* Transformation */
+  transition: transform 0.3s ease;
+  /* Transition */
+  text-decoration: none;
+}
+
+.signin-container {
+  display: flex;
+  justify-content: right;
+
+}
+
+.signin-container a {
+
+
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  box-sizing: border-box;
+  padding: 0.4rem;
+  border: 1px solid rgb(152, 14, 14);
+  background-color: rgba(152, 14, 14, 0.42);
+  border-radius: 0.4rem;
+
+}
+
+.linkAsButton,
+button {
+  background-color: #eccbcb;
+  border-radius: 0.4rem;
+  border: 1px solid rgba(149, 149, 149, 0.51);
+
+  padding: 1rem;
+  margin: 1rem;
+
+  color: rgb(255, 255, 255);
+}
+
+.linkAsButton:hover,
+button:hover {
+  background-color: rgba(181, 164, 145, 0.5);
+  color: #0B0C10;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+#paginationButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#paginationButtons button {
+  padding: 1rem;
+  margin: 0 1rem;
+
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border: 1px solid rgba(149, 149, 149, 0.51);
+}
+
+#paginationButtons button:hover {
+  background-color: rgba(181, 164, 145, 0.5);
+  color: #0B0C10;
+
+}
+
+.wel {
+  text-align: center;
+}
+
+.colored-text {
+  font-size: 3.125rem;
+}
+
+.colored-text .purple,
+.colored-text .white {
+  font-size: inherit;
+}
+
+label {
+  text-align: left; display: block;
+  font-size: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.p {
+  text-align: justify;
+  max-width: 100%;
+  margin: 0 auto;
+  color: black;
+  font-size: 1rem;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  line-height: 1.6;
+}
+
+ol > li {
+  font-size: 1.125rem;
+}
+
+.g_id_signin {
+  display: flex;
+  margin-top: 1rem;
+  margin-right: 4rem;
+  justify-content: right;
+}
+
+.bar {
+  display: block;
+  justify-content: center;
+}
+
+
+@media (max-width: 1150px) {
+  .container {
+    background-image: url("../fig/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 70rem;
+  }
+
+
+
+  .typing {
+    font-size: 2rem;
+  }
+
+
+  .header-text h1 {
+    font-size: 3rem;
+  }
+
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+
+  }
+
+  .opns h2 {
+    font-size: 2rem;
+  }
+
+  section {
+    border: 0.1rem solid #000000;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    margin: 1rem;
+    overflow-wrap: anywhere;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+
+  table,
+  th,
+  td {
+    font-size: 0.875rem;
+    border-collapse: collapse;
+  }
+
+  .p {
+  font-size: 1rem;
+
+  }
+
+  .menu {
+    background-color: transparent;
+  }
+.ad {
+  padding: 10rem 0rem;
+}
+
+
+  .lop {
+
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, 0.82);
+  }
+
+  /* Гамбургер */
+  .hamburger {
+    position: fixed; /* Фиксируем гамбургер слева */
+    top: 20px; /* Расстояние от верхней части экрана */
+    left: 20px; /* Расстояние от левого края */
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 8px;
+    width: 50px;
+
+    z-index: 1100; /* Гамбургер находится выше меню */
+  }
+
+  .hamburger span {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    border-radius: 0.4rem;
+    transition: all 0.3s ease;
+  }
+
+  /* Меню */
+  nav#menuIts {
+    display: none; /* Делаем меню блоком */
+    flex-direction: column;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Меню скрыто слева */
+    width: 30rem; /* Ширина меню */
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 20px;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out; /* Плавное выдвижение */
+  }
+  nav#menuIts.show {
+    display: flex; /* Показать меню */
+    transform: translateX(250px); /* Выдвигаем меню */
+  }
+
+  nav#menuIts a {
+    font-size: 1.9rem;
+    text-align: center;
+    line-height: 5;
+    display: block;
+    padding: 6px 0;
+    text-decoration: none;
+    color: #000000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+    transition: color 0.3s;
+  }
+
+  nav#menuIts a:hover {
+    color: #835f5f; /* Цвет при наведении */
+  }
+
+  /* Активное состояние гамбургера */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+
+  /* Footer responsive styles */
+  footer {
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  footer h3 {
+    font-size: 1rem;
+  }
+
+  main > article {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: left;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0.4rem;
+    margin: 2rem;
+  }
+
+  table{
+    font-size: 2rem;
+    border-collapse: collapse;
+  }
+
+  td,th{
+    font-size: 1.5rem;
+  }
+
+  form h3 {
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+
+  }
+
+  .header-index h1 {
+    justify-self: left;
+  }
+
+
+  input {
+    font-size: 1.5rem;
+  }
+
+  label {
+    text-align: left; display: block;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+
+
+  article a {
+    font-size: 2rem;
+  }
+
+  article h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .rating-group {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .rating-group legend {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+
+
+
+
+  }
+
+  .info h3 {
+    font-size: 1.4rem;
+  }
+
+  .rating-group label {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+  }
+
+  textarea {
+    height: 15rem;
+  }
+
+  article p {
+    font-size: 1.5rem;
+
+  }
+
+  button {
+    font-size: 1.5rem;
+  }
+
+  footer a {
+    font-size: 1.5rem;
+  }
+
+  form {
+    margin-bottom: 10rem;
+  }
+
+  .signin-container a {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+
+  .carousel button {
+    font-size: 3rem;
+  }
+
+  section {
+    font-size: 1.5rem;
+  }
+
+
+
+}
+
+
+
+
+
+

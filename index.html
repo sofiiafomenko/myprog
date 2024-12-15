@@ -1,0 +1,800 @@
+<!DOCTYPE HTML>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+
+
+
+
+
+    <link rel="stylesheet" href="css/treesBlog.css" media="screen">
+    <meta name="google-signin-client_id" content="457321644670-7s465ouk163jpvjkvjtq2rksog0qh38f.apps.googleusercontent.com">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+
+    <title>Blog</title>
+
+</head>
+
+<body>
+<div class="container">
+<header>
+
+    <div id="menuTitle" class="menu">
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="menuIts">
+            <a href="#welcome">Hlavná stránka</a>
+            <a href="#articles">Články</a>
+            <a href="#opinions">Názory návštevníkov</a>
+            <a href="#addOpinion">Pridajte svoj názor</a>
+            <a href="#addArticle">Pridajte svoj článok</a>
+            <a href="#bonus">Trendy</a>
+        </nav>
+    </div>
+    <div id="content2" class="flex-container">
+        <div class="signin-container">
+            <div class="g_id_signin" data-type="standard" data-callback="onSignIn" data-size="large" data-theme="outline" data-text="continue_with" data-shape="pill" data-width="300"></div>
+            <a class="out" id="signOutBtn" style="display: none;">Sign Out</a>
+        </div>
+    </div>
+    <div id="g_id_onload"
+         data-client_id="457321644670-7s465ouk163jpvjkvjtq2rksog0qh38f.apps.googleusercontent.com"
+         data-callback="onSignIn">
+    </div>
+    <div class="header-index">
+        <div class="header-text">
+            <h1>The Art of Interior Design</h1>
+        </div>
+
+        <div id="text" class="typing"></div>
+    </div>
+
+
+    <script>
+        const textElement = document.getElementById('text');
+        const text = "where design meets inspiration";
+        let index = 0;
+
+        function type() {
+            if (index < text.length) {
+                textElement.textContent += text.charAt(index);
+                index++;
+                setTimeout(type, 80); // Скорость печати (100 мс между буквами)
+            }
+        }
+
+        type(); // Запуск эффекта
+    </script>
+
+</header>
+
+<div class = "ad"><p>place for ad</p></div>
+
+<main id="router-view">
+    
+</main>
+
+
+
+
+
+
+<!--Templates for html, dynamically inserted by the router -->
+
+<script id="template-welcome" type="text/template">
+    <div class="lop">
+
+
+        <p class="p">Tento blog je venovaný dizajnu interiéru. Zaoberá sa rôznymi aspektmi tvorby pohodlného a štýlového priestoru,
+            vrátane moderných trendov, farebných schém, výberu nábytku, osvetlenia a dekoratívnych prvkov. Blog ponúka
+            tipy, ako urobiť interiér funkčným, esteticky príťažlivým a jedinečným, aby každý dom alebo byt odrážal
+            osobný štýl majiteľa a vytváral útulnú atmosféru.<br><br>
+            Dizajn interiéru je umením, ktoré spája estetiku s funkčnosťou a vytvára priestor, kde sa človek cíti príjemne a pohodlne. Každý dom alebo byt je unikátnym odrazom osobného štýlu majiteľa, a preto je dôležité pristupovať k návrhu s dôrazom na individuálne potreby a preferencie. Aj keď trendy v dizajne interiéru sa vyvíjajú, hlavné princípy zostávajú rovnaké – správna kombinácia farieb, materiálov, nábytku a dekoratívnych prvkov môže vytvoriť atmosféru, ktorá je nielen esteticky príjemná, ale aj praktická pre každodenný život.
+        </p>
+</div>
+
+    <div class="carousel">
+
+        <div class="carousel-slides">
+            <img src="fig/p1.jpg" alt="Image 1" class="slide">
+            <img src="fig/p2.jpg" alt="Image 1" class="slide">
+            <img src="fig/p3.jpg" alt="Image 1" class="slide">
+            <img src="fig/p4.jpg" alt="Image 1" class="slide">
+            <img src="fig/p6.jpg" alt="Image 1" class="slide">
+            <img src="fig/p7.jpg" alt="Image 1" class="slide">
+        </div>
+
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+
+    </div>
+
+
+
+
+</script>
+
+
+
+<script id="template-bonus" type="text/template">
+        <div class="trends">
+        <h2>Najdôležitejšie trendy v interiérovom dizajne 2024</h2>
+
+        <div>
+            <picture>
+                <source srcset="fig/f-small.jpg" media="(max-width: 600px)">
+                <source srcset="fig/f-medium.jpg" media="(max-width: 1000px)">
+                <source srcset="fig/f-large.jpg" media="(min-width: 1000px)">
+                <img src="fig/f.jpg" alt="Interior design" class="res-image">
+            </picture>
+        </div>
+
+        <p>Interiérový dizajn je umenie, ktoré presne odráža okolitú realitu a meniace sa predstavy človeka o kráse a pohodlí. S príchodom nových myšlienok a technológií sa mení aj vnútorný priestor domu. Poďme si povedať o najdôležitejších trendoch v oblasti interiérového dizajnu v roku 2024.</p>
+
+        <h2>Šetrnosť k životnému prostrediu</h2>
+        <p>Tento trend je silný už niekoľko sezón a pravdepodobne bude ešte dôležitejší, pretože ekologický „zelený“ životný štýl sa stáva čoraz populárnejším. Ako sa prejavuje v interiérovom dizajne?</p>
+
+        <div>
+            <picture>
+                <source srcset="fig/aaa-small.jpg" media="(max-width: 600px)">
+                <source srcset="fig/aaa-medium.jpg" media="(max-width: 1000px)">
+                <source srcset="fig/aaa-large.jpg" media="(min-width: 1000px)">
+                <img src="fig/aaa.jpg" alt="Interior design" class="res-image">
+            </picture>
+        </div>
+
+        <h2>Prírodné materiály</h2>
+        <p>Prírodné drevo, prírodný kameň s nerovnomernou štruktúrou, mramor, onyx a ich vysokokvalitné imitácie sú na vrchole popularity. Tieto materiály sa používajú:</p>
+
+        <ul>
+            <li>- Na dokončovanie a zdobenie stien drevenými a kamennými panelmi, výrobu dekoratívnych stenových panelov</li>
+            <li>- Na povrchovú úpravu parkiet a parketových dosiek, kamenných dosiek</li>
+            <li>- Na výrobu nábytku. Drevo je hlavným materiálom na výrobu nábytkových skriniek, kameň a mramor sa môžu použiť ako materiál na pracovné dosky v kuchyniach.</li>
+        </ul>
+
+        <div>
+            <picture>
+                <source srcset="fig/nat-small.jpg" media="(max-width: 600px)">
+                <source srcset="fig/nat-medium.jpg" media="(max-width: 1000px)">
+                <source srcset="fig/nat-large.jpg" media="(min-width: 1000px)">
+                <img src="fig/nat.jpg" alt="Interior design" class="res-image">
+            </picture>
+        </div>
+
+        <h2>Zelená stena</h2>
+        <p>Ďalším módnym ekologickým trendom sú zelené steny z rastlín. Okrem toho, že sú krásne, sú aj veľmi užitočné, pretože živé rastliny čistia vzduch v miestnosti a nasycujú ho kyslíkom. Rastliny v takýchto stenách sú spravidla nenáročné a nevyžadujú si osobitnú starostlivosť, hlavné je včas ich zalievať.</p>
+
+        <div>
+            <picture>
+                <source srcset="fig/lala-small.jpg" media="(max-width: 600px)">
+                <source srcset="fig/lala-medium.jpg" media="(max-width: 1000px)">
+                <source srcset="fig/lala-large.jpg" media="(min-width: 1000px)">
+                <img src="fig/lala.jpg" alt="Interior design" class="res-image">
+            </picture>
+        </div>
+
+        <h2>Jemný minimalizmus</h2>
+        <p>Minimalizmus je jedným z najobľúbenejších štýlov interiérového dizajnu posledných rokov. V takýchto interiéroch bez zbytočných predmetov a vizuálneho hluku je príjemné relaxovať a oddýchnuť si od pracovného zhonu a informačného preťaženia. Moderný minimalizmus je novým, reinterpretovaným čítaním klasického minimalizmu. Je teplejší, mäkší a útulnejší.</p>
+
+        <ol>
+            <li>V interiéri prevládajú teplé farby: béžová, broskyňová, zlatá, hnedá</li>
+            <li>Nábytok a doplnky majú plynulé, zaoblené alebo zakrivené tvary, ale sú čo najjednoduchšie a najfunkčnejšie.</li>
+            <li>Miestnosť je vybavená mäkkým viacúrovňovým osvetlením so vstavanými svietidlami, obrysovým osvetlením stropov, stien a panelov a bodovým osvetlením jednotlivých zón a objektov.</li>
+            <li>Šperky z prírodných materiálov: drevo, kameň, keramika</li>
+            <li>Atmosféru domácej pohody vytvára veľké množstvo textílií: povaly, vankúše, plédy a koberce.</li>
+        </ol>
+
+        <div>
+            <picture>
+                <source srcset="fig/mini-small.jpeg" media="(max-width: 600px)">
+                <source srcset="fig/mini-medium.jpeg" media="(max-width: 1000px)">
+                <source srcset="fig/mini-large.webp" media="(min-width: 1000px)">
+                <img src="fig/mini.webp" alt="Interior design" class="res-image">
+            </picture>
+        </div>
+
+        <div class="strip-dashed">
+            <mark>
+                <span>Aby bol minimalistický dizajn živší, odmieta hladké povrchy v prospech textúrovanejších materiálov: používa hrubé pleteniny, prírodné tkaniny, drevo.</span>
+            </mark>
+        </div>
+
+        <h2>Maximalizmus</h2>
+        <p>Maximalizmus je opačný trend pre tých, ktorí sú unavení z lakonických interiérov a chcú sa obklopiť čo najväčším množstvom zmyslových podnetov. Charakterizujú ho sýte farby, zmes štýlov, potlače a textúry.</p>
+        <p>K tomuto smeru možno priradiť aj ďalší trend v interiérovom dizajne 2024 - „dopamínový interiér“. Jeho význam spočíva v tom, že priestor je maximálne naplnený farbami, tvarmi a vecami, ktoré sú jeho majiteľovi blízke alebo vyvolávajú príjemné asociácie a zlepšujú mu náladu. Často to vedie ku kombinácii vizuálne nezlučiteľných vecí v jednom interiéri. Aby miestnosť nevyzerala ako stratená a nájdená, odporúča sa obrátiť na profesionálneho dizajnéra, ktorý vymyslí správny systém organizácie.</p>
+
+        <div>
+            <picture>
+                <source srcset="fig/maxi5555-small.png" media="(max-width: 600px)">
+                <source srcset="fig/maxi5555-medium.png" media="(max-width: 1000px)">
+                <source srcset="fig/maxi5555-large.png" media="(min-width: 1000px)">
+                <img src="fig/maxi5555.png" alt="Interior design" class="res-image">
+            </picture>
+        </div>
+
+        <div class="strip-dashed">
+            <mark>
+                <span>V súčasnosti je v móde zakrivená architektúra, napríklad oblúkové dvere a nábytok so zaoblenými hranami. Vďaka tomu je interiér uvoľnenejší a neformálnejší, s menej ostrými uhlami a strohosťou.</span>
+            </mark>
+        </div>
+
+        <h2>Pozlátený kov a farebné sklo</h2>
+        <p>Najnovším trendom interiérového dizajnu na rok 2024, o ktorom sme chceli hovoriť, sú detaily zo žltého kovu v interiéri. V móde je zlato, mosadz, bronz, ale aj rastrovaný lakovaný kov. Môžu to byť kľučky dverí, nábytkové kovania, stĺpiky a držiaky svietidiel, kovania na sanitárnu keramiku.</p>
+        <p>Zlaté akcenty dodávajú interiéru zaujímavejší a drahší vzhľad a tóny vintage.</p>
+        <p>V roku 2024 sa do interiérov vracia aj farebné sklo. Farebné priesvitné vložky do dverí a zrkadiel, žiarivé lustre a vitrážové tienidlá, stolový riad, vázy a dekoračné predmety oživia každý štýl interiéru a pozdvihnú náladu.</p>
+
+        <div>
+            <picture>
+                <source srcset="fig/zzz-small.jpg" media="(max-width: 600px)">
+                <source srcset="fig/zzz-medium.jpg" media="(max-width: 1000px)">
+                <source srcset="fig/zzz-large.jpg" media="(min-width: 1000px)">
+                <img src="fig/zzz.jpg" alt="Interior design" class="res-image">
+            </picture>
+        </div>
+
+        <h2>Priehľadné priečky a závesy</h2>
+        <p>Existuje mnoho dizajnových techník, ktoré vám umožnia rozdeliť priestor na samostatné zóny bez toho, aby ste ho museli rozdeliť na malé miestnosti. V roku 2024 sú aktuálnymi trendmi priehľadné sklenené priečky a svetelné závesy. Priečky môžu byť posuvné, výkyvné alebo stacionárne. Najpohodlnejšou možnosťou sú priečky z „inteligentného“ skla, ktoré sa v prípade potreby zmatní a poskytuje súkromie.</p>
+        <p>Ďalšou možnosťou zónovania sú záclony alebo závesy. V moderných interiéroch sa môžu použiť nielen na oknách, ale aj nahradiť dvere skríň, interiérové dvere alebo oddeliť malú zónu od celkového priestoru. Hustým závesom možno napríklad podmienečne izolovať výklenok alebo arkierové okno s kreslom na čítanie.</p>
+
+        <div>
+            <picture>
+                <source srcset="fig/zzzz-small.jpeg" media="(max-width: 600px)">
+                <source srcset="fig/zzzz-medium.jpeg" media="(max-width: 1000px)">
+                <source srcset="fig/zzzz-large.jpeg" media="(min-width: 1000px)">
+                <img src="fig/zzzz.jpeg" alt="Interior design" class="res-image">
+            </picture>
+        </div>
+
+        <h2>Výhody a nevýhody trendov v interiérovom dizajne</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Trend</th>
+                <th>Výhody</th>
+                <th>Nevýhody</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td rowspan="2">Šetrnosť k životnému prostrediu</td>
+                <td>Čistý vzduch, zdravšie prostredie</td>
+                <td>Vyššie náklady na ekologicky čisté materiály</td>
+            </tr>
+            <tr>
+                <td colspan="2">Vyžaduje pravidelnú údržbu</td>
+            </tr>
+            <tr>
+                <td>Prírodné materiály</td>
+                <td>Estetický vzhľad, trvanlivosť</td>
+                <td>Vyššie náklady na prírodné materiály</td>
+            </tr>
+            <tr>
+                <td>Zelená stena</td>
+                <td>Čistí vzduch, zlepšuje náladu</td>
+                <td>Vyžaduje pravidelnú údržbu</td>
+            </tr>
+            <tr>
+                <td>Jemný minimalizmus</td>
+                <td>Útulnosť, pokoj</td>
+                <td>Môže sa zdať nudný pre niektorých ľudí</td>
+            </tr>
+            <tr>
+                <td>Maximalizmus</td>
+                <td>Jasné farby, rozmanitosť</td>
+                <td>Môže byť vizuálne preťažený</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="3">Trendy v interiérovom dizajne 2024</td>
+            </tr>
+            </tfoot>
+        </table>
+        </div>
+
+        <footer  class="menuLink">
+            <a href="#menuTitle">
+                <!-- SVG стрелка вверх -->
+                <svg class="arrow-top-5" viewBox="0 0 154 109">
+                    <symbol id="Arrow" viewBox="-73.9 -55.3 135.9 85.4">
+                        <g>
+                            <polygon points="-73.9,29.1 -6,-9.2 61.9,30.1 61.9,14.2 -6,-25.1 -73.9,14.2 "/>
+                        </g>
+                        <g>
+                            <polygon points="-73.9,-1 -6,-39.3 61.9,0 61.9,-16 -6,-55.3 -73.9,-16 "/>
+                        </g>
+                    </symbol>
+                    <use xlink:href="#Arrow" width="135.9" height="85.4" id="XMLID_1_" x="-73.9" y="-55.3" transform="matrix(1.007 0 0 -1.007 83.0005 42)" />
+                </svg>
+            </a>
+        </footer>
+
+
+</script>
+
+
+
+<script id="template-articles" type="text/template">
+    {{#articles}}
+    <article>
+        <h2><a href="{{detailLink}}">{{title}}</a></h2>
+        <p>{{content}}</p>
+        <p>
+        by {{author}}
+        </p>
+        <p><strong>Created on:</strong> {{dateCreatedFormatted}}</p>
+    </article>
+    {{/articles}}
+    <div class="buttons">
+    <div id="paginationButtons">
+        <button id="prevPage">← Previous</button>
+        <button id="nextPage">Next →</button>
+    </div>
+    <footer  class="menuLink">
+        <a href="#menuTitle">
+        <!-- SVG стрелка вверх -->
+            <svg class="arrow-top-5" viewBox="0 0 154 109">
+                <symbol id="Arrow" viewBox="-73.9 -55.3 135.9 85.4">
+                    <g>
+                        <polygon points="-73.9,29.1 -6,-9.2 61.9,30.1 61.9,14.2 -6,-25.1 -73.9,14.2 "/>
+                    </g>
+                    <g>
+                        <polygon points="-73.9,-1 -6,-39.3 61.9,0 61.9,-16 -6,-55.3 -73.9,-16 "/>
+                    </g>
+                </symbol>
+                <use xlink:href="#Arrow" width="135.9" height="85.4" id="XMLID_1_" x="-73.9" y="-55.3" transform="matrix(1.007 0 0 -1.007 83.0005 42)" />
+            </svg>
+        </a>
+    </footer>
+    </div>
+</script>
+
+<script id="template-articles-error" type="text/template">
+
+    <article>
+        <h2>Articles acquisition failed</h2>
+        <p>
+            {{errMessage}}
+        </p>
+    </article>
+    <footer  class="menuLink">
+        <a href="#menuTitle">
+        <!-- SVG стрелка вверх -->
+            <svg class="arrow-top-5" viewBox="0 0 154 109">
+                <symbol id="Arrow" viewBox="-73.9 -55.3 135.9 85.4">
+                    <g>
+                        <polygon points="-73.9,29.1 -6,-9.2 61.9,30.1 61.9,14.2 -6,-25.1 -73.9,14.2 "/>
+                    </g>
+                    <g>
+                        <polygon points="-73.9,-1 -6,-39.3 61.9,0 61.9,-16 -6,-55.3 -73.9,-16 "/>
+                    </g>
+                </symbol>
+                <use xlink:href="#Arrow" width="135.9" height="85.4" id="XMLID_1_" x="-73.9" y="-55.3" transform="matrix(1.007 0 0 -1.007 83.0005 42)" />
+            </svg>
+    </a>
+    </footer>
+
+</script>  
+
+<script id="template-opinions" type="text/template">
+    <article  id="artOpinions">
+        <div class="opns">
+            <h2>Názory návštevníkov</h2>
+        </div>
+        {{#.}}
+        <section>
+            <h2>Používateľ: {{name}}</h2>
+            <p>Názor: {{comment}}</p>
+            <p>Email: {{email}}</p>
+            <p>Vytvorené: <i>{{created}}</i></p><br>
+        </section>
+        {{/.}}
+        {{^.}}
+        <section>
+            Neboli nájdené žiadne názory.
+        </section><br>
+        {{/.}}
+        
+    </article>
+    <footer  class="menuLink"><a href="#menuTitle">
+        <!-- SVG стрелка вверх -->
+        <svg class="arrow-top-5" viewBox="0 0 154 109">
+            <symbol id="Arrow" viewBox="-73.9 -55.3 135.9 85.4">
+                <g>
+                    <polygon points="-73.9,29.1 -6,-9.2 61.9,30.1 61.9,14.2 -6,-25.1 -73.9,14.2 "/>
+                </g>
+                <g>
+                    <polygon points="-73.9,-1 -6,-39.3 61.9,0 61.9,-16 -6,-55.3 -73.9,-16 "/>
+                </g>
+            </symbol>
+            <use xlink:href="#Arrow" width="135.9" height="85.4" id="XMLID_1_" x="-73.9" y="-55.3" transform="matrix(1.007 0 0 -1.007 83.0005 42)" />
+        </svg>
+    </a></footer>
+</script>
+
+<script id="template-addOpinion" type="text/template">
+    <div id="artOpnFrm">
+        <form id="opnFrm">
+            <h2>Zanechajte svoj názor</h2>
+
+            <label for="visitorName">Meno:</label>
+            <input type="text" id="visitorName" name="visitorName" required placeholder="Zadajte vaše meno"><br><br>
+
+            <label for="visitorEmail">Email:</label>
+            <input type="email" id="visitorEmail" name="visitorEmail" required placeholder="Zadajte váš email"><br><br>
+
+            <label for="imageURL">URL obrázka:</label>
+            <input type="url" id="imageURL" name="imageURL" placeholder="Zadajte URL obrázka"><br><br>
+
+            <label for="subscribe" class="checkbox-label">
+                <input class="sss" type="checkbox" id="subscribe" name="subscribe"> Prihlásiť sa na odber noviniek
+            </label><br>
+
+            <fieldset class="rating-group">
+                <legend>Ako hodnotíte náš blog?</legend>
+                <label for="rating1">
+                    <input type="radio" id="rating1" name="rating" value="1">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#FFDD67" />
+                        <path d="M10.67 20C10.67 20 12 17.33 16 17.33C20 17.33 21.33 20 21.33 20" stroke="#000"
+                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 12H12.01" stroke="#000" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                        <path d="M20 12H20.01" stroke="#000" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                    </svg>
+                </label>
+                <label for="rating2">
+                    <input type="radio" id="rating2" name="rating" value="2">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#FFDD67" />
+                        <path d="M10.67 20C10.67 20 12 18.67 16 18.67C20 18.67 21.33 20 21.33 20" stroke="#000"
+                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 12H12.01" stroke="#000" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                        <path d="M20 12H20.01" stroke="#000" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                    </svg>
+                </label>
+                <label for="rating3">
+                    <input type="radio" id="rating3" name="rating" value="3">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#FFDD67" />
+                        <path d="M10.67 20C10.67 20 13.33 20 16 20C18.67 20 21.33 20 21.33 20" stroke="#000"
+                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 12H12.01" stroke="#000" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                        <path d="M20 12H20.01" stroke="#000" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                    </svg>
+                </label>
+                <label for="rating4">
+                    <input type="radio" id="rating4" name="rating" value="4">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#FFDD67" />
+                        <path d="M10.67 20C10.67 20 13.33 21.33 16 21.33C18.67 21.33 21.33 20 21.33 20" stroke="#000"
+                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 12H12.01" stroke="#000" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                        <path d="M20 12H20.01" stroke="#000" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                    </svg>
+                </label>
+                <label for="rating5">
+                    <input type="radio" id="rating5" name="rating" value="5">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#FFDD67" />
+                        <path d="M10.67 20C10.67 20 13.33 22.67 16 22.67C18.67 22.67 21.33 20 21.33 20" stroke="#000"
+                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 12H12.01" stroke="#000" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                        <path d="M20 12H20.01" stroke="#000" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                    </svg>
+                </label>
+            </fieldset><br></br>
+
+            <label for="visitorMessage">Váš komentár:</label><br>
+            <textarea id="visitorMessage" name="visitorMessage" style="resize: none;" rows="5" required></textarea><br><br>
+
+            <label for="keywords">Kľúčové slovo:</label><br>
+            <input type="text" id="keywords" name="keywords" list="keywordsList" placeholder="Zadajte kľúčové slová"><br>
+            <datalist id="keywordsList">
+                <option value="interiérový dizajn">
+                <option value="farebné schémy">
+                <option value="moderné trendy">
+                <option value="výber nábytku">
+                <option value="osvetlenie">
+                <option value="dekoratívne prvky">
+                <option value="minimalizmus">
+                <option value="útulná atmosféra">
+                <option value="štýlový priestor">
+                <option value="funkčnosť">
+            </datalist><br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form><br>
+    </div>
+    <footer  class="menuLink">
+        <a href="#menuTitle">
+            <!-- SVG стрелка вверх -->
+            <svg class="arrow-top-5" viewBox="0 0 154 109">
+                <symbol id="Arrow" viewBox="-73.9 -55.3 135.9 85.4">
+                    <g>
+                        <polygon points="-73.9,29.1 -6,-9.2 61.9,30.1 61.9,14.2 -6,-25.1 -73.9,14.2 "/>
+                    </g>
+                    <g>
+                        <polygon points="-73.9,-1 -6,-39.3 61.9,0 61.9,-16 -6,-55.3 -73.9,-16 "/>
+                    </g>
+                </symbol>
+                <use xlink:href="#Arrow" width="135.9" height="85.4" id="XMLID_1_" x="-73.9" y="-55.3" transform="matrix(1.007 0 0 -1.007 83.0005 42)" />
+            </svg>
+        </a>
+    </footer>
+</script>
+ 
+
+
+<script id="template-article-form" type="text/template">
+    <div>
+        <!-- <h2>{{formTitle}}</h2> <br><br> -->
+
+        <form id="articleForm">
+            <h2 class="wel">Upraviť článok</h2>
+            <label for="author1">Autor:</label>
+            <input type="text" name="author" id="author1" value="{{author}}" size="50"
+                   title="Article author, max. length 100 characters."
+                   maxlength="100" placeholder="e.g. Ján Trieska" />
+            <br>
+            <label for="title1">Názov:</label>
+            <input type="text" name="title" id="title1" value="{{title}}" size="50"
+                   maxlength="100" pattern="\S[\S\s]*" placeholder="e.g. My story." required
+                   title="Article title, mandatory item, max. length: 100 characters. 
+The first character must not be a space."  />
+            <br>
+            <label for="imageLink1">Obrázok (url):</label>
+            <input type="url" name="imageLink" id="imageLink1" value="{{imageLink}}" size="50"
+                   title="Image URL, max. length 100 characters." maxlength="100"/>
+            <br>
+
+            <button type="button" id="btShowFileUpload">
+                Nahrať obrázok
+            </button>
+
+            <fieldset class="added hiddenElm" id="fsetFileUpload">
+                <legend>Nahratie obrázka</legend>
+                <input type="file" id="flElm" name="file" accept="image/jpeg, image/png"/>
+                <br />
+                <button type="button" id="btFileUpload">
+                    Odoslanie obrázka na server </button>
+                <button type="button" id="btCancelFileUpload">
+                    Zrušenie nahrávania </button>
+            </fieldset>
+
+
+            <br>
+            <label for="content1">Article content:</label>
+            <textarea
+                    name="content" id="content1" spellcheck="true" lang="sk"
+                    cols="50" rows="20" required
+                    title="Article content, mandatory item, can be plain text or in HTML.">
+              {{content}}
+            </textarea>
+            <br>
+            <label for="tags1">Kľúčové slovo:</label>
+            <input  type="text" name="tags" id="tags1" value="{{tags}}" size="50"
+                    title="Keyword list, comma separated." placeholder="e.g. village, drama" />
+            <br> <br>
+            <button type="reset"> Reset  </button>
+            <button type="submit"> {{submitBtTitle}} </button>
+
+        </form>
+    </div>
+
+    <footer>
+        <a href="{{backLink}}" class="linkAsButton"><< Back</a>
+        <a href="#menuTitle" class="linkAsButton">Up to the menu</a>
+    </footer>
+</script>
+
+<script id="template-article" type="text/template">
+    <article>
+        <h3>{{title}}</h3>
+        <p>
+            by {{author}}
+        </p>
+        {{#imageLink}}
+        <figure>
+            <img src="{{imageLink}}" alt="article figure" />
+        </figure>
+        {{/imageLink}}
+        <p>{{{content}}}</p>
+        <p>
+            Kľúčové slovo:
+            {{tags}}
+        </p>
+
+    </article>
+
+    <footer>
+        <a href="{{backLink}}" class="linkAsButton"><< Back</a>
+        <a href="{{editLink}}" class="linkAsButton">Edit</a>
+        <a href="{{deleteLink}}" class="linkAsButton">Delete</a>
+        <a href="#menuTitle" class="linkAsButton">Up to the menu</a>
+    </footer><br>
+        <!-- Comments Section -->
+        <article>
+            <section id="commentsSection">
+                <h2>Komentáre</h2>
+                {{#comments}}
+                    <div><h3>Autor: {{commenter}}</h3><p>{{comment}}</p></div>
+                {{/comments}}
+                
+    
+                <!-- Add Comment Form -->
+                <button id="addCommentBtn" style="display: block; ">Pridať komentár</button>
+                <div id="commentForm1" style="display: none;">
+                    <form id="commentForm">
+                        <label for="commenter">Vaše meno:</label>
+                        <input type="text" id="commenter" class="author-comment" name="commenter" required>
+                        <br><br>
+                        <label for="comment">Váš komentár:</label>
+                        <textarea id="comment" name="comment" rows="3" required></textarea>
+                        <br><br>
+                        <button type="button" id="submitComment">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </article>
+        
+</script>  
+
+
+
+<script id="template-addArticle" type="text/template">
+    <div>
+
+
+        <form id="articleForm1">
+            <h2>Pridajte svoj článok</h2>
+            <label for="author">Author:</label>
+            <input type="text" name="author" id="author" size="50"
+                   title="Article author, max. length 100 characters." 
+                   maxlength="100" placeholder="Zadajte meno autora" />
+            <br>
+            <label for="title">Názov:</label>
+            <input type="text" name="title" id="title" size="50"
+                   maxlength="100" pattern="\S[\S\s]*" placeholder="Zadajte názov článku" required
+                   title="Názov článku, povinná položka, max. dĺžka: 100 znakov.
+Prvý znak nesmie byť medzera."  />
+            <br>
+            <label for="imageLink">Obrázok (url):</label>
+            <input type="url" name="imageLink" id="imageLink" size="50" 
+                   title="Adresa URL obrázka, max. dĺžka 100 znakov." maxlength="100"/>
+            <br>
+        
+            <br>
+            <label for="content">Obsah článku:</label>
+            <textarea
+                    name="content" id="content" spellcheck="true" lang="sk"
+                    cols="50" rows="20" required
+                    title="Obsah článku, povinná položka, môže byť obyčajný text alebo v HTML.">
+          
+            </textarea>
+            <br>
+            <label for="tags">Kľúčové slovo:</label>
+            <input  type="text" name="tags" id="tags"  size="50"
+                    title="Keyword list, comma separated." placeholder="e.g. village, drama" />
+            <br> <br>
+            <button type="reset"> Reset </button>
+            <button type="submit"> Submit </button>
+
+        </form>
+    </div>
+    <footer  class="menuLink">
+        <a href="#menuTitle">
+            <!-- SVG стрелка вверх -->
+            <svg class="arrow-top-5" viewBox="0 0 154 109">
+                <symbol id="Arrow" viewBox="-73.9 -55.3 135.9 85.4">
+                    <g>
+                        <polygon points="-73.9,29.1 -6,-9.2 61.9,30.1 61.9,14.2 -6,-25.1 -73.9,14.2 "/>
+                    </g>
+                    <g>
+                        <polygon points="-73.9,-1 -6,-39.3 61.9,0 61.9,-16 -6,-55.3 -73.9,-16 "/>
+                    </g>
+                </symbol>
+                <use xlink:href="#Arrow" width="135.9" height="85.4" id="XMLID_1_" x="-73.9" y="-55.3" transform="matrix(1.007 0 0 -1.007 83.0005 42)" />
+            </svg>
+        </a>
+    </footer>
+
+</script>
+<!--JavaScript code, inserted as a module-->
+<script src="js/addOpinion.js" nomodule></script>
+<script src="js/articleFormsHandler.js" nomodule></script>
+<script type="module" src="js/index.js"></script>
+<script>
+    let isUserSignedIn = false;
+
+    window.addEventListener("load", () => {
+        localStorage.removeItem("name")
+    })
+    function parseJwt(token) {
+        let base64Url = token.split('.')[1];
+        let base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+        let jsonPayload = decodeURIComponent(window.atob(base64).split('').map(function(c) {
+            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+        }).join(''));
+        return JSON.parse(jsonPayload);
+    }
+
+    function onSignIn(googleUser) {
+        const responsePayload = parseJwt(googleUser.credential);
+        localStorage.setItem("name", `${responsePayload.given_name} ${responsePayload.family_name}`)
+        console.log(responsePayload);
+
+        // Update UI based on sign-in status
+        isUserSignedIn = true;
+        document.getElementById('signOutBtn').style.display = 'block';
+        document.querySelector('.g_id_signin').style.display = 'none';
+    }
+
+    function signOut() {
+        // Sign out logic
+        // This function will be called when the user clicks the "Sign Out" button
+        isUserSignedIn = false;
+        document.getElementById('signOutBtn').style.display = 'none';
+        document.querySelector('.g_id_signin').style.display = 'block';
+
+        // Additional logic for sign-out, if needed
+    }
+
+    document.getElementById('signOutBtn').addEventListener('click', signOut);
+</script>
+    <div class = "ad"><p>place for ad</p></div>
+</div>
+
+<footer>
+    <div class="info">
+
+    <a href="mailto:sofiia.fomenko@student.tuke.sk">
+        <svg fill="#FFB4B4FF" width="800px" height="800px" viewBox="0 0 35 35" data-name="Layer 2"
+             id="ee13b174-13f0-43ea-b921-f168b1054f8d" xmlns="http://www.w3.org/2000/svg">
+            <path
+                    d="M29.384,30.381H5.615A5.372,5.372,0,0,1,.25,25.015V9.984A5.371,5.371,0,0,1,5.615,4.619H29.384A5.372,5.372,0,0,1,34.75,9.984V25.015A5.372,5.372,0,0,1,29.384,30.381ZM5.615,7.119A2.868,2.868,0,0,0,2.75,9.984V25.015a2.868,2.868,0,0,0,2.865,2.866H29.384a2.869,2.869,0,0,0,2.866-2.866V9.984a2.869,2.869,0,0,0-2.866-2.865Z" />
+            <path
+                    d="M17.486,20.865a4.664,4.664,0,0,1-2.9-.975L1.218,9.237A1.25,1.25,0,1,1,2.777,7.282L16.141,17.935a2.325,2.325,0,0,0,2.7-.007L32.04,7.287a1.249,1.249,0,1,1,1.569,1.945L20.414,19.873A4.675,4.675,0,0,1,17.486,20.865Z" />
+        </svg>
+    </a>
+    <h3> (c) Sofiia Fomenko</h3>
+    </div>
+</footer>
+<script>
+let currentIndex = 0;
+
+function updateCarousel() {
+const slides = document.querySelector('.carousel-slides');
+const totalSlides = document.querySelectorAll('.slide').length;
+slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+function prevSlide() {
+const totalSlides = document.querySelectorAll('.slide').length;
+currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // Зацикливание
+updateCarousel();
+}
+
+function nextSlide() {
+const totalSlides = document.querySelectorAll('.slide').length;
+currentIndex = (currentIndex + 1) % totalSlides; // Зацикливание
+updateCarousel();
+}
+</script>
+</body>
+
+</html>
