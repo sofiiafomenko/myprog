@@ -725,6 +725,7 @@ ol > li {
 
   .typing {
     font-size: 2rem;
+    text-align: center;
   }
 
 
@@ -988,7 +989,8 @@ ol > li {
   }
 
   .carousel {
-    width: 20%;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .carousel button {
