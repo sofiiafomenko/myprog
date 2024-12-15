@@ -1002,6 +1002,12 @@ ol > li {
     margin-right: 0rem;
   }
 
+  .slide {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
   .carousel button {
     font-size: 3rem;
   }
