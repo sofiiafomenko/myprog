@@ -992,6 +992,12 @@ ol > li {
   .carousel {
     width: 100%;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
   }
 
   .carousel button {
