@@ -717,10 +717,10 @@ ol > li {
   .container {
     background-image: url("../fig/bg.jpg");
     background-attachment: fixed;
-    
+
     background-size: cover;
     background-position: center;
-    padding-bottom: 70rem;
+    padding-bottom: 10rem;
   }
 
 
