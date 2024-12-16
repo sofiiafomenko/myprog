@@ -715,7 +715,7 @@ ol > li {
 
 @media (max-width: 1150px) {
   .container {
-    background-image: url("../fig/bg.jpg");
+    background-image: url("../fig/bg1.jpg");
     background-attachment: fixed;
 
     background-size: cover;
@@ -1026,7 +1026,7 @@ ol > li {
   .trends li {
     font-size: 1rem;
   }
-  
+
   .trends ul {
     font-size: 1rem;
   }
